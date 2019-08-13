@@ -1,0 +1,15 @@
+function centuryFromYear(year) {
+
+  //creating variables for century calculation
+  
+    var y = year/100;
+    var x = Math.trunc(y) ;
+    var test = y-x;
+    
+    //detereming the century the year is
+    
+    if(test >= 0.01){
+        x=x+1;
+    }
+    return x;
+}
